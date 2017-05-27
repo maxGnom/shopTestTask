@@ -7,11 +7,12 @@ angular.module('shopsCatalog').directive('formDirective', function(){
     restrict: 'EA',
     templateUrl: 'directives/directive-templates/form-directive.template.html',
     link: function($scope){
-      $scope.addShop = function(name, description, branch, longitude, latitude, weekDaysStart, weekDaysEnd, weekEndsStart, weekEndsEnd){
+      $scope.addShop = function(name, description, newAddress, longitude, latitude, weekDaysStart, weekDaysEnd, weekEndsStart, weekEndsEnd){
         var newObjToArray = {
           "name":null,
           "shortDescription":null,
           "branch":null,
+          "address":null,
           "imgSrc":null,
           "mode": {
             "weekdays": [],
@@ -34,7 +35,7 @@ angular.module('shopsCatalog').directive('formDirective', function(){
         $scope.imgSourceLocalTempAddress = elem.attr('src');
         newObjToArray.name = name;
         newObjToArray.shortDescription = description;
-        newObjToArray.branch = branch;
+        newObjToArray.address = newAddress;
         newObjToArray.geoObject.geometry.coordinates = [longitude, latitude];
         newObjToArray.geoObject.properties.hintContent = name;
         newObjToArray.imgSrc = $scope.imgSourceLocalTempAddress;
