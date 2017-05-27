@@ -295,3 +295,4 @@ For more information on AngularJS please check out [angularjs.org][angularjs].
 [travis-docs]: https://docs.travis-ci.com/user/getting-started
 # shopTestTask
 # shopTestTask
+# shopTestTask
