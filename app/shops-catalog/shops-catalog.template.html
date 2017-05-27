@@ -1,0 +1,44 @@
+<section class="shops-section__main-page jumbotron">
+    <div class="shops-wrapper-container">
+        <div class="shops-container" ui-sortable ng-model="shopsCatalog">
+            <div class="shop-every-presentation col-lg-6 col-md-6 col-sm-12 col-xs-12" ng-repeat="shop in shopsCatalog">
+                <div class="shop-short-description-container col-lg-7 col-md-6 col-sm-6 col-xs-12">
+                    <span class="shop-name-container">
+                        <a class="shop-name" href="#/shops-catalog/{{shop.name}}">
+                            {{$index+1+". "}}{{shop.name}}
+                        </a>
+                    </span>
+                    <p class="shop-address">
+                        Адрес: {{shop.address}}
+                    </p>
+                    <p class="shop-mode">
+                        По будням: {{shop.mode.weekdays[0] + " : " + shop.mode.weekdays[1]}}
+                    </p>
+                    <p class="shop-mode">
+                        По выходным: {{shop.mode.weekend[0] + " : " + shop.mode.weekend[1]}}
+                    </p>
+                    <span class="shop-link-container">
+                        <a class="btn btn-primary" href="#/shops-catalog/{{shop.name}}">
+                            Перейти на страницу магазина
+                        </a>
+                    </span>
+                </div>
+                <a href="#/shops-catalog/{{shop.name}}"
+                   class="shop-full-description-link col-lg-5 col-md-6 col-sm-6 col-xs-12">
+                    <figure class="col-lg-12 col-xs-0 shop-img-presentation-container">
+                        <img class="shop-img" ng-src="{{shop.imgSrc}}">
+                    </figure>
+                </a>
+                <div class="col-xs-12 shop-info-presentation">
+                    <p>{{shop.description}}</p>
+                    <button ng-click="deleteShop($index)" type="button" class="btn-delete btn">Удалить</button>
+                    <button ng-click="redact=!redact" type="button" class="btn-delete btn">Редактировать</button>
+                </div>
+                <redact-shop></redact-shop>
+
+            </div>
+        </div>
+    </div>
+</section>
+<form-directive></form-directive>
+<map-source></map-source>

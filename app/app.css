@@ -1,0 +1,256 @@
+/* app css stylesheet */
+.page-wrapper
+{
+  width: 100%;
+  background-color: #193654;
+  padding: 15px 30px;
+  min-width: 360px;
+}
+.main-header-container__main-page
+{
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+.header-logotype-container__main-header,
+.header-title-container__main-header
+{
+  float: none;
+  display: inline-block;
+}
+.header-title-container__main-header
+{
+  vertical-align: top;
+  color: #fff;
+  font-weight: 400;
+}
+.logotype-link
+{
+  display: block;
+  width:100%;
+}
+.logotype-img
+{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.shops-section__main-page
+{
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+.shops-wrapper-container
+{
+  width: 100%;
+  background: #fff;
+  font-size: 0;
+}
+.shop-every-presentation
+{
+  background: #eee;
+  float:none;
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 50px;
+}
+.shop-full-description-link
+{
+  padding: 0;
+}
+.shop-img-presentation-container
+{
+  display: block;
+  float: right;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.shop-img
+{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.shop-name
+{
+  display: block;
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.shop-mode
+{
+  text-transform: capitalize;
+  font-size: 12px;
+}
+.shop-address
+{
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.shop-short-description
+{
+  font-size: 14px;
+}
+.btn-delete
+{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.btn-add-shop
+{
+  font-size: 20px;
+}
+.add-shop-input
+{
+  font-size: 20px;
+}
+.label-form
+{
+  font-size: 16px;
+}
+.shop-info-presentation
+{
+  font-size: 16px;
+  padding-top: 20px;
+}
+.general-title__main-header
+{
+  font-size: 26px;
+}
+.form-group span
+{
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.form-wrapper
+{
+  background: #eee;
+  width: 100%;
+}
+.form-redact-shop
+{
+  padding-top: 20px;
+}
+.btn-toggle-form-add-shop
+{
+  margin: 50px auto;
+  float: none;
+  display: block;
+}
+.btn-delete
+{
+  font-size: 14px;
+  float: right;
+  color: #4a4a4a;
+  background-color: #ffe7bf;
+  border-radius: 4px;
+}
+.form-goods-page
+{
+  background: #eee;
+}
+#map{
+  display: block;
+  width: 100%;
+}
+.shop-full-container
+{
+  background: #eee;
+}
+@media all and (max-width:1199px){
+  #map
+  {
+    height: 400px;
+  }
+  .shops-section__main-page
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+@media all and (min-width:1200px){
+  #map
+  {
+    height: 600px;
+  }
+  .shops-section__main-page
+  {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media all and (max-width:767px){
+  .shop-img-presentation-container
+  {
+    display: none;
+  }
+  .page-wrapper
+  {
+    padding: 0;
+  }
+  .general-title__main-header
+  {
+    font-size: 18px;
+  }
+}
+.name-shop
+{
+  display: block;
+  font-size: 26px;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  text-align: center;
+}
+.img-full-info
+{
+  margin: 40px auto 0;
+  display: block;
+  float: none;
+}
+.shops-container
+{
+  width: 100%;
+  overflow-x: hidden;
+}
+#fileUpl,#fileUplRedact
+{
+  display: none;
+}
+#labelForUpdRedact
+{
+  margin-top: 20px;
+}
+.file-form-group-container
+{
+  float: right;
+  text-align: end;
+  margin-top: 30px;
+}
+.cancel-photo-upd
+{
+  font-size: 10px;
+  cursor: pointer;
+}
+.table-goods-head
+{
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+[class*="ymaps-2"][class*="-ground-pane"] {
+  -webkit-filter: contrast(80%) saturate(50%) invert(100%);
+  -moz-filter: contrast(80%) saturate(50%) invert(100%);
+  -o-filter: contrast(80%) saturate(50%) invert(100%);
+  filter: contrast(80%) saturate(50%) invert(100%);
+}

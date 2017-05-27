@@ -1,0 +1,140 @@
+[
+	{
+		"name":"authentic",
+		"address":"Minsk",
+		"mode": {
+			"weekdays": ["10:00", "20:00"],
+			"weekend": ["9:00", "18:00"]
+		},
+		"imgSrc":"img/authentic.jpg",
+		"shortDescription":"Lorem Ipsum dolor sit amet",
+		"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"branch":"clothes",
+		"geoObject":{
+			"geometry":
+			{
+				"type": "Point",
+				"coordinates": [27.52959251, 53.92041501]
+			},
+			"properties":
+			{
+				"hintContent": "Authentic"
+			}
+		}
+	},
+	{
+		"name":"blyth",
+		"address":"Minsk",
+		"mode": {
+			"weekdays": ["10:00", "20:00"],
+			"weekend": ["9:00", "18:00"]
+		},
+		"imgSrc":"img/blyth.jpg",
+		"shortDescription":"Lorem Ipsum dolor sit amet",
+		"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"branch":"clothes",
+		"geoObject":{
+			"geometry":
+			{
+				"type": "Point",
+				"coordinates": [27.52461433, 53.9069675]
+			},
+			"properties":
+			{
+				"hintContent": "Blyth"
+			}
+		}
+	},
+	{
+		"name":"momentum",
+		"address":"Minsk",
+		"mode": {
+			"weekdays": ["10:00", "20:00"],
+			"weekend": ["9:00", "18:00"]
+		},
+		"imgSrc":"img/momentum.jpg",
+		"shortDescription":"Lorem Ipsum dolor sit amet",
+		"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"branch":"clothes",
+		"geoObject":{
+			"geometry":
+			{
+				"type": "Point",
+				"coordinates": [27.56941795, 53.90565285]
+			},
+			"properties":
+			{
+				"hintContent": "Momentum"
+			}
+		}
+	},
+	{
+		"name":"tito",
+		"address":"Minsk",
+		"mode": {
+			"weekdays": ["10:00", "20:00"],
+			"weekend": ["9:00", "18:00"]
+		},
+		"imgSrc":"img/tito.jpg",
+		"shortDescription":"Lorem Ipsum dolor sit amet",
+		"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"branch":"clothes",
+		"geoObject":{
+					"geometry":
+					{
+						"type": "Point",
+						"coordinates": [27.60151863, 53.88420809]
+					},
+					"properties":
+					{
+						"hintContent": "Tito"
+					}
+				}
+	},
+	{
+		"name":"texas",
+		"address":"Minsk",
+		"mode": {
+			"weekdays": ["10:00", "20:00"],
+			"weekend": ["9:00", "18:00"]
+		},
+		"imgSrc":"img/texas.jpg",
+		"shortDescription":"Lorem Ipsum dolor sit amet",
+		"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"branch":"clothes",
+		"geoObject":{
+			"geometry":
+			{
+				"type": "Point",
+				"coordinates": [27.62392044, 53.91829201]
+			},
+			"properties":
+			{
+				"hintContent": "Texas"
+			}
+		}
+	},
+	{
+		"name":"wb",
+		"address":"Minsk",
+		"mode": {
+			"weekdays": ["10:00", "20:00"],
+			"weekend": ["9:00", "18:00"]
+		},
+		"imgSrc":"img/wb.jpg",
+		"shortDescription":"Lorem Ipsum dolor sit amet",
+		"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		"branch":"clothes",
+		"geoObject":{
+			"geometry":
+			{
+				"type": "Point",
+				"coordinates": [27.64554977, 53.94527644]
+			},
+			"properties":
+			{
+				"hintContent": "Wildberries"
+			}
+		}
+	}
+]

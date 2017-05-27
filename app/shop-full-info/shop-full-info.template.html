@@ -1,0 +1,53 @@
+<section class="shop-full-container jumbotron">
+    <div class="row">
+        <img class="img-full-info container col-xs-6 col-sm-4 col-md-4 col-lg-4" ng-src="{{shopFullInfo.imgSrc}}" />
+        <h2 class="name-shop container col-xs-12">{{shopFullInfo.name}}</h2>
+        <p class="address-shop container col-xs-12">Адресс: {{shopFullInfo.address}}</p>
+        <p class="description-shop container col-xs-12">{{shopFullInfo.infoText}}</p>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>№</th>
+            <th>
+                <a class="table-goods-head" ng-click="sortType = 'nameOfGood'; sortReverse=!sortReverse">
+                    Название
+                    <span ng-show="sortType == 'nameOfGood' && sortReverse"><img ng-src="img/up.png"/></span>
+                    <span ng-show="sortType == 'nameOfGood' && !sortReverse"><img ng-src="img/down.png"/></span>
+                </a>
+            </th>
+            <th>
+                <a class="table-goods-head" ng-click="sortType = 'class'; sortReverse=!sortReverse">
+                    Описание
+                    <span ng-show="sortType == 'class' && sortReverse"><img ng-src="img/up.png"/></span>
+                    <span ng-show="sortType == 'class' && !sortReverse"><img ng-src="img/down.png"/></span>
+                </a>
+            </th>
+            <th>
+                <a class="table-goods-head" ng-click="sortType = 'price'; sortReverse=!sortReverse">
+                    Цена
+                    <span ng-show="sortType == 'price' && sortReverse"><img ng-src="img/up.png"/></span>
+                    <span ng-show="sortType == 'price' && !sortReverse"><img ng-src="img/down.png"/></span>
+                </a>
+            </th>
+            <th>
+                <a class="table-goods-head" ng-click="sortType = 'rate'; sortReverse=!sortReverse">
+                    Рейтинг
+                    <span ng-show="sortType == 'rate' && sortReverse"><img ng-src="img/up.png"/></span>
+                    <span ng-show="sortType == 'rate' && !sortReverse"><img ng-src="img/down.png"/></span>
+                </a>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="good in shopFullInfo.goods | orderBy:sortType:sortReverse">
+            <td class="col-xs-1">{{$index+1}}</td>
+            <td class="col-xs-3">{{good.nameOfGood}}</td>
+            <td class="col-xs-4">{{good.class}}</td>
+            <td class="col-xs-2">{{good.price}}</td>
+            <td class="col-xs-2">{{good.rate}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <goods-directive></goods-directive>
+</section>

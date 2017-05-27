@@ -1,0 +1,73 @@
+<div class="container col-sx-12 form-wrapper">
+    <button class="col-lg-4 col-md-4 col-sm-4 col-xs-4 btn-toggle-form-add-shop btn btn-primary" ng-click="created=!created">Добавить магазин</button>
+    <form ng-if="created" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-horizontal form-block">
+        <div class="form-group row">
+            <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 label-form" for="shopname">Название магазина</label>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <input id="shopname" class="form-control add-shop-input" required ng-model="newShopName" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 label-form" for="shortdescription">Краткое описание</label>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <input id="shortdescription" class="form-control add-shop-input" required ng-model="newShopShortDescription" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 label-form" for="branch">Тип товаров</label>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <input id="branch" class="form-control add-shop-input" required ng-model="newShopBranch" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 label-form" for="longitude">Координаты долготы</label>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <input id="longitude" class="form-control add-shop-input" required ng-model="newShopCoordLongitude" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 label-form" for="latitude">Координаты широты</label>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <input id="latitude" class="form-control add-shop-input" required ng-model="newShopCoordLatitude" />
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="label-form col-xs-12">Время работы:</span>
+            <div class="col-xs-6">
+                <span>Будние дни</span>
+                <label class="col-xs-12 label-form" for="newModeWeekDaysStart">Начало работы</label>
+                <div class="col-xs-12">
+                    <input type="number" min="0" max="24" id="newModeWeekDaysStart" class="form-control add-shop-input" ng-model="newShopModeWeekDaysStart" />
+                </div>
+                <label class="col-xs-12 label-form" for="newModeWeekDaysEnd">Конец работы</label>
+                <div class="col-xs-12">
+                    <input type="number" min="0" max="24" id="newModeWeekDaysEnd" ng-required="true" class="form-control add-shop-input" ng-model="newShopModeWeekDaysEnd" />
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <span>Выходные дни</span>
+                <label class="col-xs-12 label-form" for="newModeWeekEndsStart">Начало работы</label>
+                <div class="col-xs-12">
+                    <input type="number" min="0" max="24" id="newModeWeekEndsStart" class="form-control add-shop-input" ng-required="true" ng-model="newShopModeWeekEndsStart" />
+                </div>
+                <label class="col-xs-12 label-form" for="newModeWeekEndsEnd">Конец работы</label>
+                <div class="col-xs-12">
+                    <input type="number" min="0" max="24" id="newModeWeekEndsEnd" class="form-control add-shop-input" ng-required="true" ng-model="newShopModeWeekEndsEnd" />
+                </div>
+            </div>
+            <div class="file-form-group-container col-xs-6">
+                <label class="btn btn-primary" for="fileUpl">
+                    Выберите фото
+                </label>
+                <input id="fileUpl" class="btn btn-primary" required type="file" ngf-select ng-model="picFile">
+                <img ng-if="allowPhotoUpd" ngf-thumbnail="picFile" class="upload-img thumb">
+                <div class="cancel-photo-upd" ng-click="allowPhotoUpd=!allowPhotoUpd">отменить</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn-add-shop btn btn-success" ng-click="addShop(newShopName, newShopShortDescription, newShopBranch, newShopCoordLongitude, newShopCoordLatitude, newShopModeWeekDaysStart, newShopModeWeekDaysEnd, newShopModeWeekEndsStart, newShopModeWeekEndsEnd)">add</button>
+            </div>
+        </div>
+    </form>
+</div>

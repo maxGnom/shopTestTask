@@ -1,0 +1,4 @@
+<ya-map id="map" ya-zoom="10" ya-center="{{ center }}" ya-before-init="beforeInit()">
+    <ya-geo-object ng-repeat="o in geoObjects" ya-source="o"></ya-geo-object>
+    <ya-geo-object ng-repeat="o in shopsCatalog" ya-source="o.geoObject"></ya-geo-object>
+</ya-map>

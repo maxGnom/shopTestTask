@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="shopTest">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Shops TestTask | AngularJS</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<div class="page-wrapper container-fluid">
+  <header class="main-header-container__main-page row">
+    <section class="col-sm-4 col-xs-6 col-md-4 col-lg-2 header-logotype-container__main-header">
+      <a href="#" class="logotype-link">
+        <img class="logotype-img" src="img/logotype.png">
+      </a>
+    </section>
+    <section class="col-sm-8 col-xs-6 col-md-8 col-lg-10 header-title-container__main-header">
+      <h2 class="general-title__main-header">Shops of your city is here!</h2>
+    </section>
+  </header>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div ng-cloak ng-view></div>
+</div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/ng-file-upload/ng-file-upload-shim.js"></script>
+  <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+  <script src="bower_components/angular-ui-sortable/sortable.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="shops-catalog/shops-catalog.module.js"></script>
+  <script src="shops-catalog/shops-catalog.component.js"></script>
+  <script src="shop-full-info/shop-full-info.module.js"></script>
+  <script src="shop-full-info/shop-full-info.component.js"></script>
+  <script src="directives/shops-on-the-map.directive.js"></script>
+  <script src="directives/form.directive.js"></script>
+  <script src="directives/goods.directive.js"></script>
+  <script src="directives/redact-shop.directive.js"></script>
+  <script src="ya-map-2.0.js"></script>
+</body>
+</html>

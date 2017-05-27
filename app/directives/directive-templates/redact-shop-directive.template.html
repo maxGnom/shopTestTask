@@ -1,0 +1,56 @@
+<div class="form-redact-shop">
+    <form ng-if="redact" id="redactForm" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-horizontal form-block">
+        <div class="form-group">
+            <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 label-form" for="newName">Новое имя магазина</label>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <input id="newName" class="form-control add-shop-input" ng-required="true" ng-model="changeShopName" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 label-form" for="newShortDescription">Изменить краткое описание</label>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <textarea id="newShortDescription" class="form-control add-shop-input" ng-required="true" ng-model="changeShortDescription"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-4 col-md-4 col-sm-12 col-xs-12 label-form" for="newAddress">Новый адресс</label>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <input id="newAddress" class="form-control add-shop-input" ng-required="true" ng-model="changeAddress" />
+            </div>
+        </div>
+        <div class="form-group">
+            <span class="label-form col-xs-12">Новое время работы:</span>
+            <div class="col-xs-6">
+                <span>Будние дни</span>
+                <label class="col-xs-12 label-form" for="newModeWeekDaysStart">Начало работы</label>
+                <div class="col-xs-12">
+                    <input type="number" min="0" max="24" id="newModeWeekDaysStart" class="form-control add-shop-input" ng-model="changeShopModeWeekDaysStart" />
+                </div>
+                <label class="col-xs-12 label-form" for="newModeWeekDaysEnd">Конец работы</label>
+                <div class="col-xs-12">
+                    <input type="number" min="0" max="24" id="newModeWeekDaysEnd" ng-required="true" class="form-control add-shop-input" ng-model="changeShopModeWeekDaysEnd" />
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <span>Выходные дни</span>
+                <label class="col-xs-12 label-form" for="newModeWeekEndsStart">Начало работы</label>
+                <div class="col-xs-12">
+                    <input type="number" min="0" max="24" id="newModeWeekEndsStart" class="form-control add-shop-input" ng-required="true" ng-model="changeShopModeWeekEndsStart" />
+                </div>
+                <label class="col-xs-12 label-form" for="newModeWeekEndsEnd">Конец работы</label>
+                <div class="col-xs-12">
+                    <input type="number" min="0" max="24" id="newModeWeekEndsEnd" class="form-control add-shop-input" ng-required="true" ng-model="changeShopModeWeekEndsEnd" />
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <label id="labelForUpdRedact" class="btn btn-primary" for="fileUplRedact">
+                    Выберите фото
+                </label>
+                <input id="fileUplRedact" class="btn btn-primary" type="file" ngf-select ng-model="picFile">
+                <img ng-if="allowPhotoUpd" ngf-thumbnail="picFile" class="upload-img thumb">
+                <div class="cancel-photo-upd" ng-click="allowPhotoUpd=!allowPhotoUpd">отменить</div>
+            </div>
+        </div>
+        <button ng-click="redactShop($index, changeShopName, changeShopModeWeekDaysStart, changeShopModeWeekDaysEnd, changeShopModeWeekEndsStart, changeShopModeWeekEndsEnd, changeShortDescription, changeAddress)" type="button" class="col-xs-12 btn btn-success">Принять изменения</button>
+    </form>
+</div>
